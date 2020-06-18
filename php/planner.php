@@ -35,7 +35,7 @@ $tasks = $tasksQuery->rowCount() ? $tasksQuery : [];
       <br>
       <h6 class="planner-txt">Antoine de Saint-Exuperi</h6>
       <br>
-          <a href="../controller/exit.php" style="text-decoration:none;color:#16b4a5;font-size: 15px;">Log out</a>
+          <a class="logout" href="../controller/exit.php">Log out</a>
   <!--    <h2>Plan your day for success!</h2> -->
     </div>
   <!-- <h2><?php $_SESSION['username']?>, plan your day for success!</h2> -->
@@ -44,11 +44,11 @@ $tasks = $tasksQuery->rowCount() ? $tasksQuery : [];
   <h2 class="todo">To do list:</h2>
   <br>
   <form class="item-add" action="../controller/add.php" method="post" >
-    <input type="text" name="name" class="input" placeholder="Type a new item here." >
+    <input type="text" name="name" class="input task-input" placeholder="Type a new item here." >
     <br>
     <button type="submit" value="Add" class="button submit"><a> ADD+ </a> </button>
    </form>
-   
+
     <div class="list">
 
       <?php if(!empty($tasks)): ?>

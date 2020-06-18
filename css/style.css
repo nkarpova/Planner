@@ -59,17 +59,27 @@ header{
     padding: 14px 16px;
     text-decoration: none;
     list-style-type: none;
+    font-weight: bold;
   }
 
   .menu li a:hover {
     transition: opacity 0.5s;
-  	opacity: 0.5;
+  	color: white;
+    background-color: #16b4a5;;
+    border-radius: 15px;
   }
 
   .menu li a:active {
   	transform: translateY(2px);
   }
-
+  .home-container{
+    margin-bottom: 30px;
+    min-height: 607px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 .container{
   width: 100%;
 

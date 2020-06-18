@@ -16,7 +16,7 @@
       <h1>to access</h1>
       <div class="menu">
             <ul>
-            <li><a href="../index.php">Home</a></li>
+            <li><a href="../index.html">Home</a></li>
             <li><a href="login.php">Login</a></li>
             <li><a href="registration.php">Registration</a></li>
             </ul>

@@ -20,7 +20,16 @@ main{
   align-items: center;
   justify-content: center;
 }
-
+.logout{
+  text-decoration:none;
+  color:#16b4a5;
+  font-size: 15px;
+}
+.logout:hover {
+  border-radius: 15px;
+  background-color: white;
+  width:100px;
+}
 /* PLANNER PAGE*/
 .planner-txt{
   color: white;
@@ -119,6 +128,11 @@ span .item{
 }
 .input:focus{
   outline: none;
+}
+
+.task-input{
+  width: 360px;
+  height: 50px;
 }
 
 button{
