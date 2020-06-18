@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;/*для того чтобы прибить футер к пол*/
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;;
+  color: black;
+  background-color: white;
+
+}
+main{
+  flex-grow: 1; /*для того чтобы прибить футер к пол*/
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* PLANNER PAGE*/
+.planner-txt{
+  color: white;
+}
+
+.header-planner{
+  background-color:  #333333;
+  width: 100%;
+  color: #16b4a5;
+  text-align: center;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.container{
+  text-align: center;
+}
+.list{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 380px;
+  margin: 20px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  min-height: 400px;
+}
+
+.planner-img{
+  position: absolute;
+  z-index: -1;
+  margin-top: 130px;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+img{
+  width: 370px;
+
+  opacity: 0.1;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.items{
+  text-decoration: none;
+  list-style-type: none;
+  text-align: center;
+
+}
+
+span .item{
+    max-width: 370px;
+}
+.done-button{
+  display: inline-block;
+  font-size: 12px;
+  background-color: #4ad7ca;
+  border-radius: 10px;
+  color: black;
+  padding: 3px 6px;
+  text-decoration: none;
+}
+.done-button:hover{
+  transition: opacity 0.5s;
+	opacity: 0.5;
+}
+.items .item.done{
+  text-decoration: line-through;
+}
+.items li,
+.item-add .input{
+  border-color: #107f74;
+  border-radius: 10px;
+  border-width: thin;
+  padding: 5px 0;
+}
+.input{
+
+  font-size: 16px;
+  text-align: center;
+}
+.input:focus{
+  outline: none;
+}
+
+button{
+  background-image: linear-gradient(to right, #4ad7ca , #107f74);
+  border: none;
+  color: white;
+  border-radius: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  height: 40px;
+  width: 100px;
+  outline:0
+
+}
+button a{
+  text-decoration: none;
+  color: white;
+}
+button:hover {
+  transition: opacity 0.5s;
+	opacity: 0.5;
+
+}
+button:active{
+ transform: translateY(2px);
+}
+
+footer{
+  margin-top: 30px;
+  width: 100%;
+  height: 50px;
+  background-color: #333333;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  clear: both;
+  flex-grow: 0;/*для того чтобы прибить футер к пол*/
+}
